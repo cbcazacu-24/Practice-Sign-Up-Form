@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="box1">
+    <h1 class="title">Learn to code by watching others</h1>
+    <p class="introduction">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+</div>
+
+<div class="box2">
+    <div class="price">
+        <span class="bold-text">Try it free 7 days</span> <span>then $20/mo. thereafter</span> 
+    </div>
+
+    <div class="details">
+
+        <form id="form" autocomplete="off">
+            <div class="inputBox">
+
+            <input autocomplete="off" id="firstName" class="textBox" type="text" name="firstName" placeholder="first name">
+            <img id="firstNameIconError" class="icon-error" src="images/icon-error.svg" alt="icon-error">
+            <p id="firstNameError" class="errorMessage">First Name cannot be empty</p>
+            </div>  
+            
+            <div class="inputBox">
+            <input autocomplete="off" id="lastName" class="textBox" type="text" name="lastName" placeholder="last name">
+            <img id="lastNameIconError" class="icon-error" src="images/icon-error.svg" alt="icon-error">
+            <p id="lastNameError" class="errorMessage">Last Name cannot be empty</p>
+            </div>
+
+            <div class="inputBox">
+            <input autocomplete="off" id="email" class="textBox" type="email" name="email" placeholder="blabla@gmail.com">
+            <img id="emailIconError" class="icon-error" src="images/icon-error.svg" alt="icon-error">
+            <p id="emailError" class="errorMessage">Looks like this is not an email</p>
+            </div>
+
+            <div class="inputBox">
+            <input autocomplete="off" id="password" class="textBox" type="password" name="password" placeholder="password">
+            <img id="passwordIconError" class="icon-error" src="images/icon-error.svg" alt="icon-error">
+            <p id="passwordError" class="errorMessage">Password cannot be empty</p>
+            </div>
+        </form>
+
+      <div class="buttonContainer">
+        <button class="button" onclick="checkFormValidity()">CLAIM YOUR FREE TRIAL</button>
+      </div>
+      
+        <p class="disclaimer">By clicking the button, you are agreeing to our <span class="tas">Terms and Services</span></p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body> 
+
+</html>
